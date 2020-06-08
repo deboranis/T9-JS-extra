@@ -11,5 +11,5 @@ let modificarFrase = ["Na", "programação,",
 
 /* Em seguida, verifique o lenght do array, a saída terá que ser 10*/
 
-let fraseMod = frase.split(' ');
+let fraseMod = frase.split(' '); //esse método quebra strings em elementos, com esse parâmetro de aspas. a gente sempre usa uma nova variável pra declarar essa modificação.
 console.log(fraseMod);
