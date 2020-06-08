@@ -8,15 +8,8 @@ Armazene o nome chamado Letícia em uma variável e use a notação de colchete
  Por exemplo, o caractere no índice 0 na palavra "Charles" é "C".
  */
 
-<<<<<<< HEAD
 let leticia = "Leticia";
 
 
 console.log(leticia[0]);
 console.log(leticia.charAt(0));
-=======
-let nomeColaboradora = "Letícia";
-
-console.log('Primeira letra é com colchetes:', nomeColaboradora[0]);
-console.log('Primeira letra é com charAt:', nomeColaboradora.charAt(0));
->>>>>>> 16746e0639b0e86c10fff246fe8301d629feb56d
