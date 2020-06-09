@@ -3,3 +3,9 @@
     especie = cachorro
     raca = golden
 */
+
+const objeto = {
+    porte: 'grande',
+    especie: 'cachorro',
+    raca: 'golden',
+}
