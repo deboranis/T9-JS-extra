@@ -25,5 +25,6 @@ console.log(tarefas[0].reuniao.faculdade)
 
 //variável auxiliadora para fazermos a analise
 let acessarTarefas = tarefas[0].reuniao;
+
 //acessar o primeiro item que contém a propriedade reunião.
 console.log(acessarTarefas)

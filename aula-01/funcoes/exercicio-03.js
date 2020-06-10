@@ -11,3 +11,6 @@ function quantasLetras(palavra) {
 }
 
 quantasLetras('amalgama');
+
+
+/////////////
