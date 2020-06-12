@@ -143,28 +143,37 @@
 // const repetirNome = 4
 
 
-// function nomeRepetido(obterNome, repetirNome) {
-//     console.log(`${(obterNome)*repetirNome}`)
+// const obterNome = "Debs";
+// const repetirNome = 4;
+// const contador = 0;
+
+// while (contador < repetirNome) {
+//     console.log(obterNome);
+//     contador++
 // }
 
-// nomeRepetido(Debs, 4)
+// //ou
+
+// for (let i=0; i<repetirNome; i++) {
+//     console.log(obterNome);
+// }
 
 //////////// 
 
 // 2. Dado um array de objetos: 
 
-const usuarios = [
-    { nome: "Jordana", idade: 18 },
-    { nome: "Lilian", idade: 28 },
-    { nome: "Janaina", idade: 19 },
-    { nome: "Carla", idade: 25 },
-    { nome: "Maíra", idade: 32 },
-    { nome: "George", idade: 30 },
-    { nome: "Camila", idade: 27 },
-    { nome: "Janaína", idade: 22 },
-    { nome: "Amanda", idade: 50 },
-    { nome: "Raquel", idade: 45 }
-];
+// const usuarios = [
+//     { nome: "Jordana", idade: 18 },
+//     { nome: "Lilian", idade: 28 },
+//     { nome: "Janaina", idade: 19 },
+//     { nome: "Carla", idade: 25 },
+//     { nome: "Maíra", idade: 32 },
+//     { nome: "George", idade: 30 },
+//     { nome: "Camila", idade: 27 },
+//     { nome: "Janaína", idade: 22 },
+//     { nome: "Amanda", idade: 50 },
+//     { nome: "Raquel", idade: 45 }
+// ];
 
 // Imprima todos nome e idade do array que contém objetos usuários.
 // A saída deverá ser:
@@ -175,7 +184,161 @@ const usuarios = [
 // Lilian
 // 28
 // ...
+// for (let i = 0; i<usuarios.length; i++) {
+//     console.log(usuarios[i].nome);
+//     console.log(usuarios[i].idade)
+// }
 
-for (let i = 0; i < usuarios.length; i++) {
-    console.log(`${usuarios.nome} ${usuarios.idade}`)
+
+// for (usuario of usuarios) {
+//     console.log(usuario.nome)
+//     console.log(usuario.idade)
+// }
+
+// usuarios.forEach((valorAtual, indice) => {
+//     console.log(valorAtual)
+//     console.log(indice)
+// })
+
+
+// getElementById, querySelector, addEventListener, evento.preventDefault(), getElementById, createElement, appendChild.
+
+// CSS que será utilizado no JavaScript:
+
+// lista__form
+// extrato__table
+// listaInputNome
+// listaInputValor
+// listaInputData
+
+// ________
+// Para criar a tabela: 
+
+// tr
+// td
+
+// 1. Dado o código com comportamentos nos inputs de pegar os valores e adicionar na tabela, de acordo com o exemplo deste site: https://listagastos.oskojess.repl.co/.
+
+// Com o código disponibilizado, 
+// Utilize o index.js para criar esses comportamentos e inserir nos inputs do HTML. 
+
+
+// const users = [{ PrimeiroNome: 'Ana', ultimoNo: 'Bouley', funcao: 'Desenvolvedora' },
+//     { PrimeiroNome: 'Chloe', ultimoNome: 'Alnaji', funcao: 'Desenvolvedora' },
+//     { PrimeiroNome: 'Jonathan', ultimoNome: 'Alves', funcao: 'Publicitário' },
+//     { PrimeiroNome: 'Micaela', ultimoNome: 'Herman', funcao: 'Lead Instructor' },
+//     { PrimeiroNome: 'Robert', ultimoNome: 'Santos', funcao: 'Desenvolvedora' },
+//     { PrimeiroNome: 'Wes', ultimoNome: 'Correia', funcao: 'Instrutor' },
+//     { PrimeiroNome: 'Hanna', ultimoNome: 'Montana', funcao: 'Diretora' }
+// ];
+
+// function dev(user) {
+//     return user.funcao === "Desenvolvedora"
+// }
+
+// let filtro = users.filter(dev);
+
+// console.log(filtro);
+
+////////////////////////////
+
+// O map() funciona retornando uma nova array após a aplicação de uma função em todos os elementos da array.
+
+//
+//2. Dado um array de objetos chamado produtos: 
+
+// let produtos = [
+//     { id: 123, nome: 'Camiseta', cor: 'azul', tamanho: 'P', categoria: 'Vestuário', estoque: 10, disponivel: true, precoUnitario: 15 },
+//     { id: 125, nome: 'Regata', cor: 'azul', tamanho: 'GG', categoria: 'Vestuário', estoque: 0, disponivel: false, precoUnitario: 20 },
+//     { id: 456, nome: 'Calça', cor: 'preto', tamanho: 'GG', categoria: 'Vestuário', estoque: 1, disponivel: true, precoUnitario: 15 },
+//     { id: 982, nome: 'Tênis', cor: 'amarelo', tamanho: '38', categoria: 'Esportes', estoque: 2, disponivel: true, precoUnitario: 125 },
+// ];
+
+// // Retorne uma nova array com o id do banana.produto, nome, tamanho e preço unitário que terá o acréscimo de 1.15 sobre o valor dos produtos
+
+// function inflacao(banana) {
+//     return {
+//         id: banana.id,
+//         nome: banana.nome,
+//         tamanho: banana.tamanho,
+//         precoUnitario: banana.precoUnitario * 1.15
+//     }
+// }
+
+// const produtosInflacionados = produtos.map(inflacao)
+
+// console.log(produtosInflacionados);
+
+
+// /////////////
+
+// // 3. reduce() é um método incrivelmente poderoso que nos permite combinar todo o resultado de uma array em um único resultado.
+
+// // Vamos utilizar um reducer pra extrair todos os livros do seguinte conjunto de dados:
+
+// const dados = [{
+//         "nome": "Tawany",
+//         "livros": [
+//             "Harry Potter",
+//             "1984"
+//         ]
+//     },
+//     {
+//         "nome": "Suzelen",
+//         "livros": [
+//             "Capitães da Areia",
+//             "Menina bonita do laço de fita"
+//         ]
+//     }
+// ]
+
+// let novoArray = []
+// const obterLivros = dados.reduce((valorInicial, valorAtual) => {
+//         console.log('Valor inicial:', valorInicial)
+//         const obterTodosLivros = valorInicial.concat(valorAtual.livros);
+//         return obterTodosLivros
+//     }, novoArray) // aqui o novo array marca o acumulador. é apenas uma variavel auxiliar
+
+/////////////////
+// quiz aula 5
+
+// 1. Uma empresa de Recrutamento de pessoas Desenvolvedoras, solicitou que fizessemos o programa de seleção de recrutamento. 
+
+// Com isso, eles encaminharam duas modelagens para iniciarmos o projeto e testarmos. 
+
+// A primeira parte foi: Criar uma classe chamada Pessoa, atribuir os parametros e propriedades: Nome, Sobrenome e idade. 
+// É necessário que na classe Pessoa, contenha um método para mostrar o nome e sobrenome da pessoa cadastrada.. 
+
+// A segunda parte foi: Criar uma classe chama Habilidade, atribuir os parametros e propriedades: Nome da pessoa e habilidades que ela tem.
+// É necessário que na classe Habilidade, contenha um método para mostrar as habilidades da pessoa cadastrada.
+
+// Dicas: 
+// Utilize o método construtor, insira os parâmetros e referêncie as propriedades da classe com o this, em seguida atribue os parametros do constructor na propriedade equivalente.
+
+// Exemplo ditado:
+// criar operador class NomeClasse
+// construtor recebe nome, sobrenome
+// nome da classe recebe nome do construtor
+
+class Pessoa {
+    constructor(nome, sobrenome, idade) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.idade = idade;
+    }
 }
+
+class Habilidades {
+    constructor(nome, habilidade) {
+        this.nome = nome;
+        this.habilidade = habilidade;
+    }
+}
+
+const pessoa1 = new Pessoa('Debora', 'Nis', 27);
+const pessoa2 = new Pessoa('Danny', 'Nis', 21);
+
+const habDebora = new Habilidades('Debora', 'fotografar');
+const habDanny = new Habilidades('Danny', 'programar');
+
+console.log(pessoa1, pessoa2, habDebora, habDanny)

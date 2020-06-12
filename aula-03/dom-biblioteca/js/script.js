@@ -1,8 +1,8 @@
 const livros = {
     1: {
-        "titulo": "Javascript Eloquente",
+        "titulo": "Java Eloquente",
         "quemEscreveu": "Marijn Haverbeke",
-        "link": "https://github.com/braziljs/eloquente-javascript"
+        "link": "https://github.com/braziljs/eloquente-java"
     },
     2: {
         "titulo": "Você não sabe JS",
@@ -46,7 +46,7 @@ for (propriedade in livros) {
     botaoDesfazer.textContent = "Desfazer";
     botaoDesfazer.classList.add("botao-desfazer");
 
-    botaoJaLi.addEventListener("click", function () {
+    botaoJaLi.addEventListener("click", function() {
         //Criando um toggle
         // Verifica se o título já está marcado como lido
         if (tituloLivro.classList.contains("livro__titulo--lido")) {
@@ -67,9 +67,7 @@ for (propriedade in livros) {
     });
 
     // E se forem botões separados?
-    botaoDesfazer.addEventListener("click", function () {
+    botaoDesfazer.addEventListener("click", function() {
         tituloLivro.classList.remove("livro__titulo--lido");
     });
-}
-
 }

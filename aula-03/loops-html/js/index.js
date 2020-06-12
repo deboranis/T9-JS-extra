@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // const soma = (x, y) => { return (x + y) }
 
 // soma(3, 4);
@@ -28,27 +27,23 @@ const objetoUsuario = (id, nome) => {
 }
 
 objetoUsuario(123, 'Debs')
-=======
 const alunas = ["Od", "Nayla", "Sindi",
-  "Maria", "Liana", "Viviane",
-  "Lorena", "Nathalia",
-  "Raquel", "Raquel", "Marisa",
-  "Nathy", "Patricia",
-  "Jordana", "Ilza",
-  "Talisia", "Débora", "Tabita", "Gabrielli",
-  "Claudia", "Sara", "Jemima", "Suzelen", "Giulia", "Vanessa",
-  "Carol", "Ariane", "Millena", "Adela",
-  "Gabi Fernandes"];
+    "Maria", "Liana", "Viviane",
+    "Lorena", "Nathalia",
+    "Raquel", "Raquel", "Marisa",
+    "Nathy", "Patricia",
+    "Jordana", "Ilza",
+    "Talisia", "Débora", "Tabita", "Gabrielli",
+    "Claudia", "Sara", "Jemima", "Suzelen", "Giulia", "Vanessa",
+    "Carol", "Ariane", "Millena", "Adela",
+    "Gabi Fernandes"
+];
 
 const lista = document.getElementById("lista-alunas");
 
 alunas.forEach((aluna) => {
-  let item = document.createElement("li");
-  item.textContent = aluna;
+    let item = document.createElement("li");
+    item.textContent = aluna;
 
-  lista.appendChild(item)
-
-
+    lista.appendChild(item)
 })
-
->>>>>>> 3e2bc54b6872d7fdafbdb94c7179764dd8d2f8fc
